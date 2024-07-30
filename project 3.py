@@ -214,7 +214,7 @@ def finance():
         total_expense = sum(amount for _ , amount in expence_list)
         total_balance = total_income - total_expense
 
-        summary = f"Total Income: ${total_income}\nTotal Expence: ${total_expene} Total Balance: ${total_balance}\n\n"     
+        summary = f"Total Income: ${total_income}\nTotal Expence: ${total_expenes} Total Balance: ${total_balance}\n\n"     
 
         summary += "\nExpense Entries:\n"
         for desc, amount in expense_list:
