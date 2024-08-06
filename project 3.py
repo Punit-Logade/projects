@@ -17,7 +17,7 @@ def exit():
 # Km to miles Converter
 def kilometer_func():
     # km to mile converter 
-    root1 = ttk.Window(themename= 'journal')
+    root1 = ttk.Window(themename= 'vapor')
     root1.geometry('350x250')
     lable = ttk.Label(root1, text='Km to miles Converter')
     lable.pack()
@@ -210,14 +210,15 @@ def finance():
     # sumary fnction
 
     def summary_fun():
+        global expence_list
         total_income = sum(amount for _ , amount in  income_list) 
         total_expense = sum(amount for _ , amount in expence_list)
         total_balance = total_income - total_expense
 
-        summary = f"Total Income: ${total_income}\nTotal Expence: ${total_expenes} Total Balance: ${total_balance}\n\n"     
+        summary = f"Total Income: ${total_income}\nTotal Expence: ${total_expense} Total Balance: ${total_balance}\n\n"     
 
         summary += "\nExpense Entries:\n"
-        for desc, amount in expense_list:
+        for desc, amount in expense_list :
             summary += f"{desc}: ${amount}\n"
 
         summary_text.config(state='normal')
