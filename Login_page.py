@@ -44,24 +44,22 @@ def login_user(username, password):
         return True
     return False
 
-
-
- # Creating the login window
+# Creating the login window
 window = ttk.Window(themename='superhero')
 window.title('Login Page')
 
-    # Create frame for layout
+# Create frame for layout
 frame = ttk.Frame(window)
 frame.pack(expand=True, fill='both')
 
-    # Load and set the background image
+# Load and set the background image
 # image_path = r'C:\Users\punit\OneDrive\Desktop\apps\projects\task_manneger_materials\image_1.jpg'
 # back_image = Image.open(image_path)
 # background_image = ImageTk.PhotoImage(back_image)
 # back_label = ttk.Label(window, image=background_image)
 # back_label.place(relwidth=1, relheight=1)
 
-    # Define login function
+# Define login function
 def login():
     username = username_entry.get()
     password = password_entry.get()
@@ -84,7 +82,7 @@ def new_user():
     else:
         messagebox.showerror("Registration Failed", "Registration Failed. Username already exists.")
 
-    # Create and place widgets
+# Create and place widgets
 tk.Label(frame, text="Username:").grid(row=0, column=0, padx=10, pady=10)
 tk.Label(frame, text="Password:").grid(row=1, column=0, padx=10, pady=10)
 
